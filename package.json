@@ -1,0 +1,44 @@
+{
+  "name": "@langutil/core",
+  "version": "4.0.0",
+  "description": "Localization utility for JavaScript",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build-only": "npm run lint && node node_modules/@langutil/internal-compiler compile",
+    "build": "npm run build-only && npm run test && npm pack",
+    "lint": "node node_modules/@langutil/internal-compiler check && ./node_modules/.bin/eslint src",
+    "lint:internals": "./node_modules/.bin/eslint __tests__",
+    "test": "jest __tests__/index.test.js"
+  },
+  "keywords": [
+    "accessibility",
+    "language",
+    "localization",
+    "translation"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chin98edwin/langutil-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chin98edwin/langutil-core/issues"
+  },
+  "homepage": "https://github.com/chin98edwin/langutil-core",
+  "author": "chin98edwin",
+  "readme": "README.md",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@langutil/internal-compiler": "file:langutil-internal-compiler-4.0.0.tgz",
+    "eslint": "^7.3.1",
+    "import-fresh": "^3.2.1",
+    "jest": "^26.1.0"
+  },
+  "jest": {
+    "verbose": true
+  }
+}

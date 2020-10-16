@@ -1,0 +1,49 @@
+{
+  "variables": [
+    // utils/string-swapper.js
+    "cleanupUnusedPlaceholders",
+    "stringMapArray",
+    "stringMapObject",
+
+    // utils/missing-localization-warning-debouncer.js
+    "missingLocalizations",
+    "memoizedStack",
+    "timer",
+    "pushWarning",
+    "triggerWarning",
+    "debounce",
+    "printWarning",
+
+    // langutil-bases.js
+    "AutoDetect",
+    "prepareEventDetail",
+    "getResolvedClosestLanguage",
+    "getGuidedLanguage",
+    "localizeFromScratch",
+    "getMergedDict",
+    "getFlippedDictionary",
+
+    // langutil-core.js
+    "init",
+    "appendCache",
+    "language",
+    "dictionary",
+    "allLanguages",
+    "initByLang",
+    "isAutoDetected",
+    "hookCounter",
+    "hookedReferences",
+    "warningDebouncer",
+    "setDictionary",
+    "appendDictionary",
+    "setLanguage",
+    "localize",
+    "localizeExplicitly",
+    "addEventListener",
+    "removeEventListener",
+    "SECRET_updateHookedItems",
+
+    // utils/plugins.js
+    "collection"
+  ]
+}
