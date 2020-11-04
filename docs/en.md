@@ -85,6 +85,7 @@ console.log(allLanguages) // ['en', 'ja', 'my']
 ## getAutoDetectStatus
 
 Get whether auto language detection is active.
+
 ```js
 const isAuto = langutil.getAutoDetectStatus()
 ```
@@ -99,11 +100,6 @@ langutil.init({
         HELLO: 'Hello',
         HELLO_NAME_1: 'Hello, %p',
         HELLO_NAME_2: 'Hello, {:name}',
-    },
-    zh: { 
-        HELLO: '哈咯',
-        HELLO_NAME_1: '哈咯，%p',
-        HELLO_NAME_2: '哈咯，{:name}',
     },
 }, 'en')
 
@@ -132,8 +128,8 @@ langutil.init({
 }, 'en')
 
 localizeExplicitly('zh', 'HELLO') // 哈咯
-localizeExplicitly('zh', 'HELLO_NAME_1', ['John']) // 哈咯, John
-localizeExplicitly('zh', 'HELLO_NAME_2', { name: 'Jane' }) // 哈咯, Jane
+localizeExplicitly('zh', 'HELLO_NAME_1', ['John']) // 哈咯，John
+localizeExplicitly('zh', 'HELLO_NAME_2', { name: 'Jane' }) // 哈咯，Jane
 ```
 
 ## addEventListener / removeEventListener
